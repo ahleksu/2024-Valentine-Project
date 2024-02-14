@@ -81,3 +81,26 @@ a img:hover {
 .card:hover {
     transform: scale(1.1); /* Scales up the card */
 }
+
+
+@media (max-width: 768px) {
+    .container {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+
+    a img {
+        margin-top: 20px;
+        width: 150px; /* Reduce the image button size for smaller screens */
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* Creates 1 column for smaller screens */
+        gap: 30px;
+        padding: 50px;
+    }
+
+    .card img {
+        width: 100%; /* Ensure the image covers the full width of its container */
+    }
+}

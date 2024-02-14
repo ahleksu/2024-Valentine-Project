@@ -69,3 +69,12 @@ p {
         -1px 1px 0 #8B0000,
         1px 1px 0 #8B0000;
 }
+
+@media (max-width: 768px) {
+    p {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 1.5em; /* Reduce the font size for smaller screens */
+        /* Other adjustments... */
+    }
+}

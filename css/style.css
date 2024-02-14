@@ -6,6 +6,7 @@ body {
     /* Adjust as needed */
     font-family: sans-serif;
     /* Basic font styling */
+    min-height: 100vh;
 }
 
 .container {
@@ -57,6 +58,10 @@ a img:hover {
     /* Slightly enlarge the button on hover */
 }
 
+.back {
+    margin-bottom: 50px; /* Adjust as needed */
+}
+
 .hearts-row {
     display: flex;
     /* Use flexbox to layout hearts in a row */
@@ -106,7 +111,15 @@ a img:hover {
 
 /* Optional media queries for responsive adjustments */
 @media (max-width: 768px) {
-    .container {
-        /* Adjust styles for smaller screens */
+    .hearts-row img {
+        width: 50px; /* Reduce the size of the hearts for smaller screens */
+    }
+
+    h1 {
+        font-size: 3rem; /* Reduce the font size of the message for smaller screens */
+    }
+
+    .image-item p {
+        font-size: 1.5rem; /* Reduce the font size of the text for smaller screens */
     }
 }

@@ -77,3 +77,38 @@ a img:hover {
     height: 200px;
 }
 
+@media (max-width: 768px) {
+    .music_player{
+        border: 5px solid palevioletred;
+        border-radius: 20px;
+        justify-content: center;
+        align-items: center; /* Add this to align items vertically */
+        background-color: #eee;
+        padding: 50px;
+        width: 200px;
+        height: 400px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex; /* Add this to make the children of .music_player flex items */
+        flex-direction: column; /* Add this to stack the children vertically */
+    }
+
+    .music_player .title {
+        font-family: 'Pixelify Sans', sans-serif;
+        font-size: 2.0rem;
+        margin: 0;
+        text-align: start; /* Add this to center the text */
+    }
+    .music_player .author {
+        font-family: 'Pixelify Sans', sans-serif;
+        font-size: 1.0rem;
+        margin: 0;
+        text-align: start; /* Add this to center the text */
+    }
+
+    .music_player .controls{
+        margin: 0 auto; /* Add this to center the controls horizontally */
+        width: 100%; /* Change this to make the controls fit its parent */
+        height: 100px;
+    }
+}

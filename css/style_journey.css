@@ -94,3 +94,24 @@ a img:hover {
     border: solid 1px transparent;
     /* Smoothens the edge */
 }
+
+@media (max-width: 768px) {
+    #timer {
+        font-size: 1.5em;
+        /* Reduce the font size for smaller screens */
+        /* Other adjustments... */
+    }
+
+    .time-values,
+    .time-labels {
+        font-family: 'DotGothic16', sans-serif;
+        /* Example font */
+        font-size: 1.5rem;
+    }
+
+    .time-labels {
+        font-size: smaller;
+        font-size: 0.7rem;
+        /* Makes the label text smaller than the number */
+    }
+}
