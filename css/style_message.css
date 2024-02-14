@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    /* Remove default body margin for full-viewport background */
+    background-color: #eee;
+    /* Fallback background color */
+    /* Adjust as needed */
+    font-family: sans-serif;
+    /* Basic font styling */
+}
+
+.container {
+    background: url("/assets/imgs/clouds.gif") no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    /* Set minimum height to viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fallback-image {
+    display: none;
+    /* Initially hide fallback image */
+}
+
+/* Optional: Style for the image button */
+a img {
+    width: 150px;
+    /* Adjust image button size */
+    transition: transform 0.2s;
+    /* Smooth transition for hover effect */
+}
+
+a img:hover {
+    transform: scale(1.1);
+    /* Slightly enlarge the button on hover */
+}
+
+
+
+.valentines-message {
+    margin-bottom: 50px;
+    padding: 50px;
+    background-color: #eee;
+    text-align: center;
+    font-size: 1.5em;
+    width: 50%;
+    height: auto;
+    font-family: 'Pixelify Sans', sans-serif;
+    border-radius: 50px;
+    border: 5px solid #f589b6;
+    /* Border color and thickness */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* Shadow offset, blur, and opacity */
+}
+
+b{
+    color: #e26fa3;
+}
+
+.hearts-row {
+    display: flex;
+    /* Use flexbox to layout hearts in a row */
+    justify-content: center;
+    /* Center the hearts horizontally */
+    align-items: center;
+    /* Align the hearts vertically */
+    margin-bottom: 20px;
+    /* Add some space between the hearts and the container */
+}
+
+.hearts-row img {
+    width: 100px;
+    margin: 0 10px;
+    /* Add some space between each heart */
+}

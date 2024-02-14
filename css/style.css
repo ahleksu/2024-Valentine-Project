@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    /* Remove default body margin for full-viewport background */
+    background-color: #eee;
+    /* Fallback background color */
+    /* Adjust as needed */
+    font-family: sans-serif;
+    /* Basic font styling */
+}
+
+.container {
+    background: url("/assets/imgs/bg.gif") no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    /* Set minimum height to viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fallback-image {
+    display: none;
+    /* Initially hide fallback image */
+}
+
+/* Style for the message */
+h1 {
+    color: white;
+    text-align: center;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: bold;
+    font-size: 5rem;
+    /* Adjust font size */
+    margin: 20px 0;
+    /* Add some spacing around the message */
+    text-shadow: 2px 2px 4px #000000,
+        /* Shadow for depth */
+        -1px -1px 0 #8B0000,
+        /* Outline effect */
+        1px -1px 0 #8B0000,
+        -1px 1px 0 #8B0000,
+        1px 1px 0 #8B0000;
+}
+
+/* Optional: Style for the image button */
+a img {
+    width: 150px;
+    /* Adjust image button size */
+    transition: transform 0.2s;
+    /* Smooth transition for hover effect */
+}
+
+a img:hover {
+    transform: scale(1.1);
+    /* Slightly enlarge the button on hover */
+}
+
+.hearts-row {
+    display: flex;
+    /* Use flexbox to layout hearts in a row */
+    justify-content: center;
+    /* Center the hearts horizontally */
+    align-items: center;
+    /* Align the hearts vertically */
+    margin-bottom: 20px;
+    /* Add some space between the hearts and the container */
+}
+
+.hearts-row img {
+    width: 75px;
+    margin: 0 10px;
+    /* Add some space between each heart */
+}
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px; /* Adjust space between items */
+    padding: 50px;
+}
+
+.image-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-item img {
+    width: 150px; /* Adjust to your preferred size */
+    height: 150px; /* Adjust to your preferred size */
+    object-fit: cover; /* Ensures the images cover the area nicely */
+}
+
+.image-item p {
+    margin-top: 8px;
+    font-weight: bold;
+    font-family: "Pixelify Sans", sans-serif;
+    text-align: center;
+}
+
+
+
+
+/* Optional media queries for responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        /* Adjust styles for smaller screens */
+    }
+}

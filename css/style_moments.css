@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    /* Remove default body margin for full-viewport background */
+    background-color: #eee;
+    /* Fallback background color */
+    /* Adjust as needed */
+    font-family: sans-serif;
+    /* Basic font styling */
+    overflow-y: auto;
+}
+
+.container {
+    background: url("/assets/imgs/day.gif") no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    /* Set minimum height to viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* Optional: Style for the image button */
+a img {
+    width: 150px;
+    /* Adjust image button size */
+    transition: transform 0.2s;
+    /* Smooth transition for hover effect */
+}
+
+a img:hover {
+    transform: scale(1.1);
+    /* Slightly enlarge the button on hover */
+}
+
+.fallback-image {
+    display: none;
+    /* Initially hide fallback image */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Creates 3 columns */
+    gap: 40px;
+    padding: 30px;
+}
+
+.card {
+    background-color: #fff;
+    /* Background color of the card */
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #000, 0 0 10px rgba(0, 0, 0, 0.5);
+    /* Pixelated border effect */
+    border: solid 1px transparent;
+    /* Smoothens the edge */
+    height: 100%;
+    /* Example fixed height */
+    position: relative;
+    /* For absolute positioning of the image if needed */
+    overflow: hidden;
+    /* Ensures any part of the image that exceeds the card boundary is clipped */
+    transition: transform 0.3s ease; /* Smooth transition for the transform */
+}
+
+.card img {
+    width: 350px;
+    /* Ensure the image covers the full width of its container */
+    height: 100%;
+    /* Ensure the image covers the full height of its container */
+    object-fit: cover;
+    object-position: top;
+    /* Scale the image as needed to cover the container, clipping it if necessary */
+    display: block;
+    /* Ensures the image is displayed without any line-height space below it */
+    transition: transform 0.3s ease; /* Smooth transition for the transform */
+}
+
+.card:hover {
+    transform: scale(1.1); /* Scales up the card */
+}

@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    /* Remove default body margin for full-viewport background */
+    background-color: #eee;
+    /* Fallback background color */
+    /* Adjust as needed */
+    font-family: sans-serif;
+    /* Basic font styling */
+    overflow-y: auto;
+}
+
+.container {
+    background: url("/assets/imgs/journey.gif") no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    /* Set minimum height to viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fallback-image {
+    display: none;
+    /* Initially hide fallback image */
+}
+
+/* Optional: Style for the image button */
+a img {
+    width: 150px;
+    /* Adjust image button size */
+    transition: transform 0.2s;
+    /* Smooth transition for hover effect */
+}
+
+a img:hover {
+    transform: scale(1.1);
+    /* Slightly enlarge the button on hover */
+}
+
+#timer {
+    font-family: "Pixelify Sans", sans-serif;
+    text-align: center;
+    color: #fff;
+    /* Or any other color that fits the design */
+    margin: 20px 0;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px #000000,
+        /* Shadow for depth */
+        -1px -1px 0 #8B0000,
+        /* Outline effect */
+        1px -1px 0 #8B0000,
+        -1px 1px 0 #8B0000,
+        1px 1px 0 #8B0000;
+}
+
+.time-values,
+.time-labels {
+    font-family: 'DotGothic16', sans-serif;
+    /* Example font */
+    font-size: 5rem;
+}
+
+.time-values span,
+.time-labels {
+    display: inline-block;
+    /* Aligns numbers and labels */
+    margin: 0 5px;
+    /* Spacing between each set of numbers and labels */
+    text-align: center;
+    /* Centers text within the span */
+}
+
+.time-labels {
+    font-size: smaller;
+    /* Makes the label text smaller than the number */
+}
+
+#screenshot {
+    width: 80%;
+    /* Adjust the width as needed */
+    max-width: 600px;
+    /* Maximum width of the image */
+    margin: 20px auto;
+    /* Centers the image with margin */
+    display: block;
+    /* Ensures the image is block level */
+    box-shadow: 0 0 0 2px #fff,
+        /* White border */
+        0 0 0 4px #000,
+        /* Black shadow to create pixel effect */
+        0 0 10px rgba(0, 0, 0, 0.5);
+    /* Soft shadow for depth */
+    border: solid 1px transparent;
+    /* Smoothens the edge */
+}

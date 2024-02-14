@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    /* Remove default body margin for full-viewport background */
+    background-color: #eee;
+    /* Fallback background color */
+    /* Adjust as needed */
+    font-family: sans-serif;
+    /* Basic font styling */
+}
+
+.container {
+    background: url("/assets/imgs/night.gif") no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    /* Set minimum height to viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fallback-image {
+    display: none;
+    /* Initially hide fallback image */
+}
+
+/* Optional: Style for the image button */
+a img {
+    width: 150px;
+    /* Adjust image button size */
+    transition: transform 0.2s;
+    /* Smooth transition for hover effect */
+}
+
+a img:hover {
+    transform: scale(1.1);
+    /* Slightly enlarge the button on hover */
+}
+
+.music_player{
+    border: 5px solid palevioletred;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center; /* Add this to align items vertically */
+    background-color: #eee;
+    padding: 60px;
+    width: 300px;
+    height: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex; /* Add this to make the children of .music_player flex items */
+    flex-direction: column; /* Add this to stack the children vertically */
+}
+
+.music_player .title {
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 2.5rem;
+    margin: 0;
+    text-align: start; /* Add this to center the text */
+}
+.music_player .author {
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 1.5rem;
+    margin: 0;
+    text-align: start; /* Add this to center the text */
+}
+
+
+.music_player img{
+    width: 100%; /* Change this to make the image fit its parent */
+    margin: 0; /* Add this to center the image horizontally */
+}
+
+.music_player .controls{
+    margin: 0 auto; /* Add this to center the controls horizontally */
+    width: 100%; /* Change this to make the controls fit its parent */
+    height: 200px;
+}
+
