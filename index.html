@@ -21,8 +21,23 @@
         </div>
         <img src="fallback-background.png" alt="Website background" class="fallback-image" />
         <h1>Dear Michelle,<br>will you be my Valentine?</h1>
+        <audio id="myAudio" autoplay>
+          <source src="/assets/audio/bg_music2.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
         <!-- Added image button -->
         <a href="html/home.html"><img src="assets/imgs/img_btn.png" alt="Start" /></a>
     </div>
+    <script>
+      var audioElement = document.getElementById("myAudio");
+
+      document.addEventListener("visibilitychange", function () {
+        if (document.hidden) {
+          audioElement.pause();
+        } else {
+          audioElement.play();
+        }
+      });
+    </script>
   </body>
 </html>

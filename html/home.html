@@ -37,7 +37,23 @@
             </div>
         </div>
 
+        <audio id="myAudio" autoplay>
+            <source src="/assets/audio/bg_music2.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+
         <a href="/index.html"><img class="back" src="/assets/imgs/back_btn.png" alt="Back" /></a>
     </div>
+    <script>
+        var audioElement = document.getElementById("myAudio");
+  
+        document.addEventListener("visibilitychange", function () {
+          if (document.hidden) {
+            audioElement.pause();
+          } else {
+            audioElement.play();
+          }
+        });
+      </script>
   </body>
 </html>

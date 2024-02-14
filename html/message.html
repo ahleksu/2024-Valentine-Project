@@ -23,10 +23,25 @@
 
           Hi love! I know I might be too late to ask you to be my valentine, but I just want to say <b>thank you for everything</b>. And, I wanted to express to you how much I am by making this. It is actually my first time making this and I hope you liked it hehe inspo from TikTok. For this year's hearts day, I want you to know that you are my <b>greatest love</b>. You are the one that made me feel wanted despite my every flaw and stayed with me through hardships and successes. I am always captivated and smitten by your presence. You are my <b>fatal flaw</b>. And in the books I'm reading, it means <b>you ground me to life</b>. You are my <b>weakness and strength</b>. <b>My Achilles' heel</b>. You hold a <b>power</b> that can put me down and bring me back to life. Thank you for being in it. <b>I look forward to be with you for a lifetime</b>.
         </div>
+        <audio id="myAudio" autoplay>
+          <source src="/assets/audio/bg_music2.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
        
         
 
         <a href="home.html"><img class="back" src="/assets/imgs/back_btn.png" alt="Start" /></a>
     </div>
+    <script>
+      var audioElement = document.getElementById("myAudio");
+
+      document.addEventListener("visibilitychange", function () {
+        if (document.hidden) {
+          audioElement.pause();
+        } else {
+          audioElement.play();
+        }
+      });
+    </script>
   </body>
 </html>
